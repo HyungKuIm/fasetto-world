@@ -35,10 +35,10 @@
                                        Margin="0 0 0 20"
                                        />
                             <!-- Email -->
-                            <TextBox Tag="Email" />
+                            <TextBox Text="Email" />
 
                             <!-- Password -->
-                            <TextBox Tag="Password" Margin="0 0 0 30" />
+                            <TextBox Text="Password" Margin="0 0 0 30" />
 
                             <!-- Next button -->
                             <Button Content="Next" HorizontalAlignment="Center" />
