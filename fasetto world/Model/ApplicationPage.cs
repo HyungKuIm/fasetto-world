@@ -8,6 +8,7 @@ namespace fasetto_world
 {
     public enum ApplicationPage
     {
-         Login = 0
+         Login = 0,
+         Chat = 1
     }
 }

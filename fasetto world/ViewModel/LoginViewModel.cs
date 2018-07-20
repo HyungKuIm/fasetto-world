@@ -18,16 +18,20 @@ namespace fasetto_world
 
         public LoginViewModel()
         {
-            LoginCommand = new RelayCommand(async () => await Login());
+            LoginCommand = new RelayParameterizedCommand(async (parameter) => await Login(parameter));
         }
 
-        public async Task Login()
+        public async Task Login(object parameter)
         {
             await Task.Delay(5000);
 
             var email = this.Email;
             var pass = this.Password;
             MessageBox.Show("login success");
+            var page = (System.Windows.Controls.Page)parameter;
+            Window mainWin = Window.GetWindow(page);
+            WindowViewModel ViewModel = (WindowViewModel)mainWin.DataContext;
+            ViewModel.CurrentPage = ApplicationPage.Chat;
         }
     }
 }
