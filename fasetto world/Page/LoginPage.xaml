@@ -35,13 +35,13 @@
                                        Margin="0 0 0 20"
                                        />
                             <!-- Email -->
-                            <TextBox Text="Email" />
+                            <TextBox Text="{Binding Email}"  />
 
                             <!-- Password -->
-                            <TextBox Text="Password" Margin="0 0 0 30" />
+                            <TextBox Text="{Binding Password}" Margin="0 0 0 30" />
 
                             <!-- Next button -->
-                            <Button Content="Next" HorizontalAlignment="Center" />
+                            <Button Content="Next" HorizontalAlignment="Center" Command="{Binding LoginCommand}"/>
                             
                             
                         </StackPanel>

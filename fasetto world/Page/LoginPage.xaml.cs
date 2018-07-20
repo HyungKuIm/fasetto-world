@@ -23,6 +23,7 @@ namespace fasetto_world
         public LoginPage()
         {
             InitializeComponent();
+            this.DataContext = new LoginViewModel();
         }
     }
 }
