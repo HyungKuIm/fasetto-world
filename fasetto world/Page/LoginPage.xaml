@@ -39,10 +39,12 @@
                             <TextBox Text="{Binding Email}"  />
 
                             <!-- Password -->
-                            <TextBox Text="{Binding Password}" Margin="0 0 0 30" />
+                            <PasswordBox  Margin="0 0 0 30" />
 
                             <!-- Next button -->
-                            <Button Content="Next" HorizontalAlignment="Center" 
+                            <Button Content="Next" 
+                                    local:IsBusyProperty.Value="{Binding LoginIsRunning}"
+                                    HorizontalAlignment="Center" 
                                     Command="{Binding LoginCommand}"
                                     CommandParameter="{Binding ElementName=Page}"/>
                             
