@@ -42,7 +42,7 @@
                             <PasswordBox  Margin="0 0 0 30" />
 
                             <!-- Next button -->
-                            <Button Content="Next" 
+                            <Button Content="Next" x:Name="btnNext"
                                     local:IsBusyProperty.Value="{Binding LoginIsRunning}"
                                     HorizontalAlignment="Center" 
                                     Command="{Binding LoginCommand}"

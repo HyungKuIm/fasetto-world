@@ -36,16 +36,20 @@
         <Setter Property="FontFamily" Value="{StaticResource LatoRegular}" />
         <Setter Property="Padding" Value="10" />
         <Setter Property="Margin" Value="0 5 0 5" />
+       
         <Setter Property="BorderBrush" Value="{StaticResource WordBlueBrush}" />
         <Setter Property="BorderThickness" Value="0 0 0 1" />
-
         <Setter Property="local:MonitorPasswordProperty.Value" Value="True" />
-        <!--<Setter Property="local:HasCorrectTextProperty.Value" Value="True" />
+        <!--<Setter Property="local:HasCorrectTextProperty.Value" Value="True" />-->
+        <!--<Setter Property="Background" Value="{Binding local:HasCorrectTextProperty.Value, Converter={x:Static local:BooleanToColorConverter.Instance}}" />-->
 
-        <Style.Triggers>
-            <Trigger Property="local:HasCorrectTextProperty.Value" Value="False">
-                <Setter Property="Background" Value="Beige" />
-            </Trigger>
+        <!--<Setter Property="local:HasCorrectTextProperty.Value" Value="True" />-->
+        <!--<Setter Property="local:HasCorrectTextProperty.Value" Value="True" />-->
+
+        <!--<Style.Triggers>
+            <DataTrigger Binding="{Binding local:HasCorrectTextProperty.Value}" Value="False">
+                <Setter Property="Background" Value="Red" />
+            </DataTrigger>
         </Style.Triggers>-->
     </Style>
 
