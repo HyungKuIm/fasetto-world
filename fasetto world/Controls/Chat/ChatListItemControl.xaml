@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="fasetto_world.ChatListItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:fasetto_world"
+             Height="60"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="300">
+    <Grid Background="{StaticResource ForegroundLightBrush}">
+        <Grid.ColumnDefinitions>
+            <!-- 새로운 메시지 표시자 바-->
+            <ColumnDefinition Width="Auto" />
+            <!-- 프로필 사진 -->
+            <ColumnDefinition Width="Auto" />
+            <!-- 메인 컨텐츠-->
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Border Background="Red" Width="5" />
+
+        <Border Grid.Column="1" Padding="8">
+            <Border Background="{StaticResource WordBlueBrush}"
+                    Width="{Binding ActualHeight, RelativeSource={RelativeSource Self}}"
+                    CornerRadius="{Binding ActualHeight, RelativeSource={RelativeSource Self}}"
+                    >
+                <TextBlock Text="{Binding Initials}"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Foreground="{StaticResource ForegroundLightBrush}"
+                           FontSize="{StaticResource FontSizeAverage}"
+                           FontFamily="{StaticResource LatoRegular}"/>
+            </Border>
+        </Border>
+        
+        <!-- Main Contents-->
+        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+            <!-- Name-->
+            <TextBlock Text="{Binding Name}" 
+                       Foreground="{StaticResource WordBlueBrush}"
+                       FontFamily="{StaticResource LatoRegular}" />
+            <!-- Message-->
+            <TextBlock Text="{Binding Message}" 
+                       Foreground="{StaticResource ForegroundDarkBrush}"
+                       TextTrimming="CharacterEllipsis"
+                       FontFamily="{StaticResource LatoRegular}" />
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

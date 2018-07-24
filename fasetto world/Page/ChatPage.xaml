@@ -9,6 +9,6 @@
       Title="ChatPage">
 
     <Grid>
-        <Label Content="Chat Page" />
+        <local:ChatListControl/>
     </Grid>
 </Page>
