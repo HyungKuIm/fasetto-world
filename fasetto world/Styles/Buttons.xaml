@@ -27,11 +27,11 @@
                                    Margin="{TemplateBinding Padding}"
                                    Visibility="{TemplateBinding local:IsBusyProperty.Value, Converter={x:Static local:BooleanToVisibilityConverter.Instance}}"
                                        />
-                            <!--<TextBlock Style="{StaticResource SpinningText}" 
+                            <TextBlock Style="{StaticResource SpinningText}" 
                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                    Visibility="{TemplateBinding local:IsBusyProperty.Value, Converter={x:Static local:BooleanToVisibilityConverter.Instance}, ConverterParameter=True}"
-                                       />-->
+                                       />
                         </Grid>
 
                     </Border>

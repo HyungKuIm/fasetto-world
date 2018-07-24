@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -36,7 +37,9 @@ namespace fasetto_world
         {
             //HasCorrectTextProperty.SetValue((PasswordBox)sender);
             var passwordBox = (PasswordBox)sender;
-            if (passwordBox.SecurePassword.Length > 0)
+            //if (passwordBox.SecurePassword.Length > 0)
+            //MessageBox.Show(passwordBox.SecurePassword.ToString());
+            if (Regex.IsMatch(passwordBox.Password, "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$"))
             {
                 passwordBox.Background = new SolidColorBrush(Colors.Green);
             } else

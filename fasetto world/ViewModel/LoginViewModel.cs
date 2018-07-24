@@ -32,11 +32,11 @@ namespace fasetto_world
 
                 var email = this.Email;
                 var pass = this.Password;
-                MessageBox.Show("login success");
-                //var page = (System.Windows.Controls.Page)parameter;
-                //Window mainWin = Window.GetWindow(page);
-                //WindowViewModel ViewModel = (WindowViewModel)mainWin.DataContext;
-                //ViewModel.CurrentPage = ApplicationPage.Chat;
+                //MessageBox.Show("login success");
+                var page = (System.Windows.Controls.Page)parameter;
+                Window mainWin = Window.GetWindow(page);
+                WindowViewModel ViewModel = (WindowViewModel)mainWin.DataContext;
+                ViewModel.CurrentPage = ApplicationPage.Chat;
             } finally
             {
                 LoginIsRunning = false;
