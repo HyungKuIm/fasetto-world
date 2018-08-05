@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fasetto world", "fasetto world\fasetto world.csproj", "{C68F3211-383B-4541-8F20-73AE0B0C8221}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{FEA6C63A-BD42-4AFF-BE48-08BE9A727D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{AA916FE1-BB93-4493-A4E1-B624C462B3AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C68F3211-383B-4541-8F20-73AE0B0C8221}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C68F3211-383B-4541-8F20-73AE0B0C8221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C68F3211-383B-4541-8F20-73AE0B0C8221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA6C63A-BD42-4AFF-BE48-08BE9A727D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA6C63A-BD42-4AFF-BE48-08BE9A727D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA6C63A-BD42-4AFF-BE48-08BE9A727D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA6C63A-BD42-4AFF-BE48-08BE9A727D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA916FE1-BB93-4493-A4E1-B624C462B3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA916FE1-BB93-4493-A4E1-B624C462B3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA916FE1-BB93-4493-A4E1-B624C462B3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA916FE1-BB93-4493-A4E1-B624C462B3AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
