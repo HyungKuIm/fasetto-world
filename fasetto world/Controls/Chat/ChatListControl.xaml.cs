@@ -20,9 +20,17 @@ namespace fasetto_world
     /// </summary>
     public partial class ChatListControl : UserControl
     {
+        private ChatListViewModel ViewModel = new ChatListViewModel();
         public ChatListControl()
         {
             InitializeComponent();
+            this.Loaded += ChatListControl_Loaded;
+            this.DataContext = this.ViewModel;
+        }
+
+        private async void ChatListControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            await this.ViewModel.SetChatListViewModel();
         }
     }
 }

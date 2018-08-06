@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:fasetto_world"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid DataContext="{x:Static local:ChatListDesignModel.Instance}" 
+    <Grid 
           Background="{StaticResource ForegroundLightBrush}">
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <ItemsControl ItemsSource="{Binding Items}">

@@ -12,7 +12,7 @@ namespace fasetto_world
 
         public ChatListDesignModel()
         {
-            Items = new List<ChatListItemViewModel>
+            Items = new System.Collections.ObjectModel.ObservableCollection<ChatListItemViewModel>
             {
                 new ChatListItemViewModel
                 {
