@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace fasetto_world
 {
     /// <summary>
-    /// MainWindow.xaml에 대한 상호 작용 논리
+    /// ChatListControl.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ChatListControl : UserControl
     {
-        public MainWindow()
+        public ChatListControl()
         {
             InitializeComponent();
-            this.DataContext = new WindowViewModel();
         }
     }
 }

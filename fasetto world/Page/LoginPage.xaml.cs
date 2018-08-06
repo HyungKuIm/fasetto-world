@@ -16,14 +16,14 @@ using System.Windows.Shapes;
 namespace fasetto_world
 {
     /// <summary>
-    /// MainWindow.xaml에 대한 상호 작용 논리
+    /// LoginPage.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginPage : System.Windows.Controls.Page
     {
-        public MainWindow()
+        public LoginPage()
         {
             InitializeComponent();
-            this.DataContext = new WindowViewModel();
+            this.DataContext = new LoginViewModel();
         }
     }
 }
